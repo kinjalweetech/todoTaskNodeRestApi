@@ -1,0 +1,32 @@
+{
+  "name": "to-dotask",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint-check": "eslint . --ext ts",
+    "lint": "eslint --fix . && prettier --write .",
+    "start": "node dist/src/index.js",
+    "dev": "npx nodemon src/index.ts",
+    "build": "rimraf dist && tsc",
+    "tscheck": "tsc --project tsconfig.json",
+    "add-build": "git add dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.7.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.4",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
